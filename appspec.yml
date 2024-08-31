@@ -5,3 +5,4 @@ Resources:
       Properties:
         Name: aws-cicd-test
         Alias: dev
+        AliasName: dev
