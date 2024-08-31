@@ -6,7 +6,8 @@ phases:
       python: 3.10
   build:
     commands:
-      - zip -r artifact.zip lambda_function.py appspec.yml
+      - zip -r function.zip lambda_function.py
 artifacts:
   files:
-    - artifact.zip
+    - function.zip
+    - appspec.yml
