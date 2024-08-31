@@ -7,3 +7,5 @@ Resources:
         Name: aws-cicd-test
         CurrentVersion: 1
         TargetVersion: 2
+        Code:
+          ZipFile: function.zip
