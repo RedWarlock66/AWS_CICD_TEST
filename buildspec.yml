@@ -17,7 +17,6 @@ phases:
     commands:
       - echo Packaging the Lambda function
       - zip -r function.zip .
-      - zip -ur function.zip appspec.yml
 
 artifacts:
   files:
