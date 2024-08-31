@@ -5,6 +5,7 @@ Resources:
       Properties:
         Alias: dev
         Name: aws-cicd-test
-        Version: 2
+        CurrentVersion: 2
+        TargetVersion: 1
         Code:
           ZipFile: function.zip
