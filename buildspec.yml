@@ -4,14 +4,9 @@ phases:
   install:
     runtime-versions:
       python: 3.10
-  pre_build:
-    commands:
-      - mkdir -p build
   build:
     commands:
-      - zip -r build/function.zip lambda_function.py
-      - cp appspec.yml build/
+      - zip -r artifact.zip lambda_function.py appspec.yml
 artifacts:
   files:
-    - build/function.zip
-    - build/appspec.yml
+    - artifact.zip
