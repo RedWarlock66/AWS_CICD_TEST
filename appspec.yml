@@ -3,9 +3,7 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Alias: dev
         Name: aws-cicd-test
-        CurrentVersion: 2
-        TargetVersion: 1
+        Version: 2
         Code:
           ZipFile: function.zip
