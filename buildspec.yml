@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.11
+
+  pre_build:
+    commands:
+      - echo Preparing to build the Lambda function
+
+  build:
+    commands:
+      - echo Building the Lambda function
+
+  post_build:
+    commands:
+      - echo Packaging the Lambda function
+      - zip -r function.zip .
+
+artifacts:
+  files:
+    - function.zip
