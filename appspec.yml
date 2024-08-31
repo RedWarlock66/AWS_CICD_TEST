@@ -1,8 +1,7 @@
 version: 0.0
 Resources:
-  - aws-cicd-test:
+  - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name: aws-cicd-test
         Alias: dev
-        AliasName: dev
+        Name: aws-cicd-test
